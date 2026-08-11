@@ -1,6 +1,10 @@
 <h1>XBOX ACCOUNT RENTAL AGREEMENT</h1>
- 
-Date: <strong>{{ current_date }}</strong><p>
+
+<p>
+Date: <strong>8/10/26</strong>
+</p>
+
+<p>
 This Xbox Account Rental Agreement ("Agreement") is between:
 </p>
 
@@ -124,9 +128,11 @@ Account Owner Signature: <strong>elucd</strong>
 </p>
 
 <p>
-Date: <strong>{{ current_date }}</strong>                                                                                                         
- </p>      
+Date: <strong>8/10/26</strong>
+</p>
+
 <hr>
+
 <h3>Renter Information</h3>
 
 <label>Payhip Order ID</label><br>
