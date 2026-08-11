@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Xbox Rental Contract</title>
+<script src="https://cdn.jsdelivr.net/npm/signature_pad@4.0.0/dist/signature_pad.umd.min.js"></script>
+</head>
+<body>
+<h1>Xbox Account Rental Agreement</h1>
+
+<form method="POST">
+<input name="order_id" placeholder="Payhip Order ID" required><br><br>
+<input name="full_name" placeholder="Full Legal Name" required><br><br>
+<input name="email" placeholder="Email" required><br><br>
+<input name="phone" placeholder="Phone"><br><br>
+<input name="gamertag" placeholder="Gamertag"><br><br>
+
+<label>Type Full Name as Signature</label><br>
+<input name="typed_signature" required><br><br>
+
+<label>Draw Signature</label><br>
+<canvas id="pad" width="500" height="200" style="border:1px solid black"></canvas>
+<input type="hidden" name="signature_data" id="signature_data">
+<br>
+<button type="button" onclick="saveSig()">Save Signature</button>
+<button type="submit">Submit Contract</button>
+</form>
+
+<script>
+const pad = new SignaturePad(document.getElementById('pad'));
+function saveSig(){
+ document.getElementById('signature_data').value = pad.toDataURL();
+ alert("Signature saved");
+}
+</script>
+</body>
+</html>
